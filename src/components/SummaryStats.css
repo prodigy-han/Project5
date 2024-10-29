@@ -1,23 +1,21 @@
 .summary-cards {
   display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Align items vertically in the center */
+  justify-content: normal; /* Use space-between to distribute space evenly */
+  align-items: flex-start; /* Align items to the start of the container */
   padding: 20px;
-  background-color: #1e1e1e;
+  background-color: #1e1e1e; 
   color: white;
-  gap: 15px; /* Space between cards */
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
 }
 
 .card {
-  background-color: #3e3e3e;
+  background-color: #3e3e3e; 
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 200px;
-  margin: 10px;
-  border: 1px solid #444;
+  width: 200px; /* Fixed width for consistency */
+  margin: 10px; /* Add margin to create space around cards */
 }
 
 .card h3 {

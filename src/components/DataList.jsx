@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const DataList = ({ weatherData }) => {
   return (
@@ -8,12 +7,10 @@ const DataList = ({ weatherData }) => {
       <ul>
         {weatherData.map((data, index) => (
           <li key={index}>
-            <Link to={`/city/${data.city_name}`}>
-              <p>City: {data.city_name}</p>
-              <p>Temperature: {data.temp}°F</p>
-              <p>Humidity: {data.rh}%</p>
-              <p>Weather: {data.weather.description}</p>
-            </Link>
+            <p>City: {data.city_name}</p>
+            <p>Temperature: {data.temp}°F</p>
+            <p>Humidity: {data.rh}%</p>
+            <p>Weather: {data.weather.description}</p>
           </li>
         ))}
       </ul>
