@@ -13,6 +13,7 @@ const SummaryStats = ({ weatherData }) => {
 
   return (
     <div className="summary-cards-container">
+      <div className="summary-cards">
       <div className="card">
         <h3>Total Cities</h3>
         <h3>{totalCities}</h3>
@@ -24,6 +25,7 @@ const SummaryStats = ({ weatherData }) => {
       <div className="card">
         <h3>Average Humidity</h3>
         <p>{avgHumidity}%</p>
+        </div>
       </div>
     </div>
   );
